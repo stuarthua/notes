@@ -1,0 +1,130 @@
+site_name: Stuart's Notes
+copyright: Copyright &copy; 2022
+
+# theme config
+theme:
+  name: material
+  custom_dir: overrides # 启用主题拓展
+  language: 'zh' # 语言，默认为en
+  features:
+    - announce.dismiss
+    - content.code.annotate
+    - content.tabs.link
+    - content.tooltips
+    - header.autohide
+    - navigation.expand
+    - navigation.indexes
+    - navigation.instant
+    # - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    - toc.integrate
+  palette:
+    - media: "(prefers-color-scheme)" # 自动切换暗/亮模式
+      toggle:
+        icon: material/brightness-auto
+        name: 自动模式
+    - media: "(prefers-color-scheme: light)" # 亮色
+      scheme: default
+      toggle:
+        icon: material/weather-night
+        name: 暗色模式
+    - media: "(prefers-color-scheme: dark)" # 暗色
+      scheme: slate
+      primary: blue grey
+      toggle:
+        icon: material/weather-sunny
+        name: 亮色模式
+
+# Customization
+plugins:
+  - search:
+      separator: '[\s\u200b\-]' # 启用中文搜索支持
+  - minify:
+      minify_html: true
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/stuarthua
+  # generator: false # 隐藏 Made with Material for MkDocs
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Page tree
+nav:
+  - About: index.md
+  - Linux:
+    - 关于 Linux: linux/index.md
+  - Mac:
+    - 关于 Mac: mac/index.md
+  - Windows:
+    - 关于 Windows: windows/index.md
+  - Android:
+    - 关于 Docker: android/index.md
+  - iOS:
+    - 关于 iOS: ios/index.md
+  - Git:
+    - 关于 Git: git/index.md
+  - Python:
+    - 关于 Python: python/index.md
+  - Node.js:
+    - 关于 Node.js: nodejs/index.md
+  - Ruby:
+    - 关于 Ruby: ruby/index.md
+  - Go:
+    - 关于 Go: go/index.md
+  - Shell:
+    - 关于 shell: shell/index.md
+  - PHP:
+    - 关于 PHP: php/index.md
+  - Java:
+    - 关于 PHP: java/index.md
+  - Docker:
+    - 关于 Docker: docker/index.md
+  - Zzz...:
+    - 已归档: zzz/archived.md
