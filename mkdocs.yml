@@ -108,22 +108,22 @@ nav:
     - 关于 Docker: android/index.md
   - iOS:
     - 关于 iOS: ios/index.md
+  - Java:
+    - 关于 Java: java/index.md
   - Git:
     - 关于 Git: git/index.md
-  - Python:
-    - 关于 Python: python/index.md
   - Node.js:
     - 关于 Node.js: nodejs/index.md
+  - Python:
+    - 关于 Python: python/index.md
   - Ruby:
     - 关于 Ruby: ruby/index.md
   - Go:
     - 关于 Go: go/index.md
-  - Shell:
-    - 关于 Shell: shell/index.md
   - PHP:
     - 关于 PHP: php/index.md
-  - Java:
-    - 关于 Java: java/index.md
+  - Shell:
+    - 关于 Shell: shell/index.md
   - Docker:
     - 关于 Docker: docker/index.md
   - Zzz...:
